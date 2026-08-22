@@ -176,7 +176,8 @@ class Spider(Spider):
                     {"n": "爵士", "v": "jueshi"},
                     {"n": "古典", "v": "gudian"}
                 ]
-            }
+            },
+           {"key": "char", "name": "字母", "value": [{"n": n, "v": v} for n,v in [("全部","index"),("A","a"),("B","b"),("C","c"),("D","d"),("E","e"),("F","f"),("G","g"),("H","h"),("I","i"),("J","j"),("K","k"),("L","l"),("M","m"),("N","n"),("O","o"),("P","p"),("Q","q"),("R","r"),("S","s"),("T","t"),("U","u"),("V","v"),("W","w"),("X","x"),("Y","y"),("Z","z")]]}
         ]
         return {"class": classes, "filters": filters, "list": []}
 
