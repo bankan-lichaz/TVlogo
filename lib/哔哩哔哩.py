@@ -17,6 +17,12 @@ TIMEOUT = 10
 MAX_RETRIES = 3
 
 CLASS_LIST = [
+    {"type_name": "小鸣", "type_id": "安争鸣"},
+    {"type_name": "抬头", "type_id": "老高与小茉合集"},
+    {"type_name": "SNL", "type_id": "SNL合集"},
+    {"type_name": "老梁", "type_id": "老梁"},
+    {"type_name": "Lucy", "type_id": "EnglishwithLucy"},
+    {"type_name": "ETJ", "type_id": "ETJEnglish"},
     {"type_name": "AI短剧", "type_id": "AI短剧"},
     {"type_name": "番剧", "type_id": "番剧"},
     {"type_name": "纪录片", "type_id": "纪录片"},
