@@ -1452,15 +1452,15 @@ class Spider(SpiderBase):
             return ""
         out = ['#EXTM3U']
         for slug, name, _si, _p, _d, _y in CHANNELS:
-            group = '央视频'
+            group = '央视频道'
             if slug.startswith('cgtn'):
                 group = 'CGTN'
             elif slug.endswith('ws') or slug == 'cetv1' or slug == 'guoxue':
                 group = '卫视频道'
-            elif slug in ('cctvfyjc', 'cctvdyjc', 'cctvhjjc'):
-                group = '付费剧场'
-            elif slug in ('cctv4k', 'cctv8k', 'cctv164k'):
-                group = '4K超清'
+            # elif slug in ('cctvfyjc', 'cctvdyjc', 'cctvhjjc'):
+            #     group = '付费剧场'
+            # elif slug in ('cctv4k', 'cctv8k', 'cctv164k'):
+            #     group = '4K超清'
             out.append('#EXTINF:-1 tvg-id="%s" tvg-name="%s" group-title="%s",%s' % (slug, name, group, name))
             out.append('http://127.0.0.1:%d/%s.m3u8' % (port, slug))
         return '\n'.join(out) + '\n'
