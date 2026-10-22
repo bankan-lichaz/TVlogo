@@ -1457,10 +1457,6 @@ class Spider(SpiderBase):
                 group = 'CGTN'
             elif slug.endswith('ws') or slug == 'cetv1' or slug == 'guoxue':
                 group = '卫视频道'
-            # elif slug in ('cctvfyjc', 'cctvdyjc', 'cctvhjjc'):
-            #     group = '付费剧场'
-            # elif slug in ('cctv4k', 'cctv8k', 'cctv164k'):
-            #     group = '4K超清'
             out.append('#EXTINF:-1 tvg-id="%s" tvg-name="%s" group-title="%s",%s' % (slug, name, group, name))
             out.append('http://127.0.0.1:%d/%s.m3u8' % (port, slug))
         return '\n'.join(out) + '\n'
