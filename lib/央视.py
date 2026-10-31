@@ -634,7 +634,7 @@ class Spider(Spider):
                 print(f"栏目网页解析 TOPC 失败: {e}")
         return ""
 
-    def _column_episodes(self, topic_id, limit=10000):
+    def _column_episodes(self, topic_id, limit=100):
         if not topic_id:
             return []
         try:
